@@ -10,8 +10,6 @@ grid_size = inputFile.gets
 
 while( line = inputFile.gets )
 
-  puts "Starting new robot"
-
   mars = Mars.new(grid_size.chomp)
   robot = Robot.new( line.chomp.split(" ") )
 

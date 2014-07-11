@@ -8,13 +8,13 @@ class Robot
     @card_pnt = init_params[2]
   end
 
-  def move(move_letter)
+  def move(move_letter, mars)
     if( move_letter.eql?("I") )
       I_move()
     elsif move_letter.eql?("D")
       D_move()
     else
-      A_move()
+      A_move(mars)
     end
   end
 
@@ -32,7 +32,13 @@ class Robot
       end
     end
 
-    def A_move()
+    def A_move(mars)
+
+      current_x_pos = Integer(@pos_x)
+      current_y_pos = Integer(@pos_y)
+
+      mars.clear_pos(current_x_pos, current_y_pos)
+
       if( @card_pnt.eql?("N") )
         @pos_y += 1
       elsif( @card_pnt.eql?("S") )
@@ -42,6 +48,9 @@ class Robot
       else
         @pos_x -= 1
       end
+
+      mars.place_robot(self)
+
     end
 
     def D_move()

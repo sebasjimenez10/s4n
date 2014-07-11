@@ -1,7 +1,6 @@
 Retos s4n
 ===
 
----
 
 **Explorador de marte**
 

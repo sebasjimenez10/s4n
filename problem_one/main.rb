@@ -5,7 +5,7 @@ require_relative 'mars'
 inputFile = File.new("robots_input.txt", "r")
 outputFile = File.new("robots_output.txt", "w")
 
-# Grid Size => Not used at all
+# Used to initialize Mars
 grid_size = inputFile.gets
 
 while( line = inputFile.gets )

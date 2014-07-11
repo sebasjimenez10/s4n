@@ -2,9 +2,6 @@ Retos s4n
 ===
 
 
-**Explorador de marte**
-
-
 ###**Instrucciones**:
 Resuelva el siguiente problema describiendo el modelo de objetos de la solución mediante un diagrama de clases. Implemente el diseño que definió en el diagrama de clases.
 
@@ -12,7 +9,7 @@ Se espera que la solución sea resuelta utilizando los mecanismos y prácticas d
 
 Suponga que la aplicación recibirá las líneas de entrada a través de un archivo de texto plano sin ningún tipo de formato en particular.
 
-###1. Robots
+###1. Explorador de marte
 
 **Enunciado**:
 
